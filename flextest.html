@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 <style>
-.flex-container {
+.container {
   display: flex;
-  background-color: DodgerBlue;
+  background-color:blueviolet;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
-
-.flex-container > div {
+	
+.container > div {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
@@ -15,15 +19,23 @@
 }
 </style>
 </head>
+	
 <body>
-
-<div class="flex-container">
+<div class="container">
   <div>1</div>
   <div>2</div>
   <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div> 
+  <div>7</div>
+  <div>8</div>
+  <div>9</div> 
+  <div>10</div> 
 </div>
+	
 
-<p>För att använda Flex-box måste du först definiera en flex kontainer (flex container) där <em>display</em> är satt till <em>flex</em>.</p>
+<p>För att använda Flex-box måste du först definiera en flex kontainer (container) där <em>display</em> är satt till <em>flex</em>.</p>
 
 <p>Barn direkt under flex container blir automatiskt flex enheter.</p>
 
